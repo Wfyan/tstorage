@@ -1,0 +1,125 @@
+.main{
+	margin: 20px auto;
+	width: 980px;
+	height: 270px;
+	background-color: #f2f2f2;
+	position: relative;
+}
+.tranbg{
+	width: 980px;
+	height: 270px;
+	border: 1px #f2f2f2 solid;
+	background-color: #fff;
+	position: absolute;
+	top: -6px;
+	right: 4px;
+}
+.advmain, .advmain .tranbg{
+	height: 400px;
+}
+.tran_nav{
+	width: 920px;
+	height: 46px;
+	border-bottom: 2px solid #e6e6e6;
+	position: relative;
+	margin: 0 auto;
+}
+.tran_nav ol{
+	width: 720px;
+	padding: 0;
+	margin: 0 auto;
+}
+.tran_nav li{
+	height: inherit;
+	width: 150px;
+	padding-left: 30px;
+	display: inline-block;
+	float: left;
+}
+.tran_nav .ts{
+	color: #999;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 46px;
+}
+.content{
+	padding: 20px 0;
+	overflow: hidden;
+}
+.form_list{
+	overflow: hidden;
+}
+.form_item{
+	padding: 10px 0 10px 260px;
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+.advmain .form_item{
+	padding: 10px 0 10px 90px;
+}
+.form_item span{
+	display: inline;
+	position: absolute;
+	margin-right: 10px;
+	height: 38px;
+	line-height: 38px;
+	text-align: right;
+	font-size: 14px;
+}
+.advmain .form_item span{
+	width: 102px;
+}
+.form_item input{
+	width: 240px;
+	float: left;
+	margin-left: 120px;
+	margin-right: 2px;
+	height: 22px;
+	line-height: 22px;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #dedede;
+}
+#check{
+	width: 90px;
+	margin-left: 60px;
+}
+.check_box{
+	width: 76px;
+	height: 38px;
+	margin-left: 10px;
+	float: left;
+}
+.form_item #phonenum{
+	width: 202px;
+	margin-left: 60px;
+}
+#phone_next{
+	width: 180px;
+	cursor: pointer;
+	margin-left: 70px;
+}
+.form_item .btn{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	padding: 0 20px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	text-align: center;
+	background-color: #FF4001;
+	border-radius: 3px;
+}
+.form_item .EndInput{
+	margin-left: 16px;
+}
+.advmain .form_item .clear {
+	width: 15px;
+}
+#soushuo{
+	width: 100px;
+	cursor: pointer;
+	margin-left: 320px;
+}
