@@ -1,0 +1,75 @@
+.main{
+	margin: 20px auto;
+	width: 1000px;
+	position: relative;
+	overflow: hidden;
+}
+.loginImg{
+	width: 612px;
+	height: 258px;
+	float: left;
+}
+.loginbg{
+	position: relative;
+	float: left;
+	left: 25px;
+	width: 344px;
+	height: 430px;
+	background-color: #f2f2f2;
+	top: 5px;
+}
+.loginbg form{
+	display: block;
+	width: 306px;
+	height: 260px;
+	border: 1px #e1e1e1 solid;
+	background-color: #fff;
+	position: relative;
+	top: -5px;
+	right: 5px;
+	padding: 15px 20px;
+}
+.loginbg .title{
+	font-weight: bold;
+	font-size: 24px;
+	font-family: '微软雅黑';
+	border-bottom: 1px #efefef solid;
+	padding-bottom: 18px;
+}
+#loginUserName{
+	border: 1px solid #ddd;
+	padding: 4px 10px;
+	height: 30px;
+	line-height: 30px;
+	width: 230px;
+}
+#loginPassword{
+	border: 1px solid #ddd;
+	padding: 4px 10px;
+	height: 30px;
+	line-height: 30px;
+	width: 230px;
+}
+.loginbg .btn{
+	background-color: #ff5500;
+	font-size: 16px;
+	font-weight: 700;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	border: 1px #ff5500 solid;
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+}
+.loginbg table{
+	border-bottom: 1px #ddd solid;
+}
+.regis{
+	padding: 0 20px;
+	color: #777;
+}
+.regis a{
+	color: #c10000;
+}

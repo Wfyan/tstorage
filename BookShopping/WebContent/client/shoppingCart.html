@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen">
+	<title>我的购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/top.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/cartstyle.css">
+</head>
+<body>
+<div id="top">
+	<div class="top_nav_bg">
+		<div class="top_link">
+			<div class="link_text">
+				<span>您好，欢迎光临深圳书城！</span>
+				<span class="purchase" style="display: none;">您的购物车中有 <span id="purchase_num">0</span> 件商品,合计 <span id="purchase_cost">0.00</span> 元</span>
+				<a id="cart" href="#">我的账户</a>
+				<a href="#">退出</a>
+			</div>
+		</div>
+	</div>
+	<div class="top_top">
+		<div class="logo">
+			<img class="img" src="images/logo.png">
+		</div>
+		<div class="cart_step">
+			<ul class="step1">
+				<li class="step-1">1.我的购物车</li>
+				<li class="step-2">2.填写核定订单信息</li>
+				<li class="step-3">3.成功提交订单</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="main">
+	<div class="cart_hd">
+		<h2>我的购物车</h2>
+		<span>(温馨提示：当前仅支持同时一个商户结算！)</span>
+	</div>
+	<div class="cart_content">
+		<div>
+			<table id="shoppingCart_productList" cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<th width="30"></th>
+						<th width="80">商品图片</th>
+						<th width="350">商品名称</th>
+						<th width="150">商品单价</th>
+						<th width="150">折扣价</th>
+						<th width="120">购买数量</th>
+						<th width="150">小计</th>
+						<th width="150">操作</th>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<div class="cart">
+								<div class="shop_info">
+									<input type="checkbox" name="checboxShop" value="0" checked="checked">
+									<span>商户：</span>
+									<a href="">书城1(0755-82073446)</a>
+								</div>
+								<table cellspacing="0">
+									<tbody>
+										<tr>
+											<td width="30" align="center"><input type="checkbox" name="c_product" value="" checked="checked"></td>
+											<td width="80" align="center"><span class="cart_span"><a href=""><img class="img" src="images/5043602_160.jpg"></a></span></td>
+											<td width="350" align="center">
+												<div class="cart_productName"><a href="">山川岁月长</a></div>
+												<div class="cart_tip">库存不足</div>
+											</td>
+											<td width="150" align="center"><span class="cart_productPrice">￥<del><span>49.80</span></del></span></td>
+											<td width="150" align="center"><span class="cart_productPrice">￥<span id="cart_productPrice">49.80</span></span></td>
+											<td width="150" align="center">
+												<span class="sub" onclick="changenum(this.className,0)">-</span>
+												<input id="cart_productnum" type="text" name="" value="1">
+												<span class="add" onclick="changenum(this.className,0)">+</span>
+											</td>
+											<td width="150" align="center"><span class="cart_productPrice2">￥<span id="cart_productPrice2">49.80</span></span></td>
+											<td width="150" align="center"><input type="submit" name="" value="删除" id="cart_del"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="text-align: right;">
+			<span class="cart_price">购物车总计：<span>￥<span id="cart_totalPrice">0.00</span></span></span>
+		</div>
+	</div>
+	<div class="cart_buy">
+		<div class="clear_buycart"><a>删除选中商品</a></div>
+		<div class="cart_buycartsub">
+			<input type="submit" name="" value="结&nbsp;算" id="shoppingCart_sub">
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="footer_custom">
+		<div>
+			<p>深圳书城中心城0755-2399 2013 深圳书城罗湖城0755-8207 3030 深圳书城南山城0755-8612 2001 深圳书城宝安城0755-2300 0666</p>
+			<p><a href="">深圳出版发行集团公司</a> 版权所有 粤ICP备13056886号-3</p>
+		</div>
+		<div class="icon2_box">
+			<a href=""><img class="img" src="images/2.gif"></a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+function changenum(n,i){
+	var num = document.getElementsByClassName(n)[i].parentNode.getElementsByTagName('input')[0];
+	if (n=="add") {
+		num.value++;
+	}else if(n=="sub"&&num.value>0){
+		num.value--;
+	}
+	var p1 = document.getElementById('cart_productPrice').innerHTML;
+	var tp = document.getElementById('cart_productPrice2');
+	var atp = document.getElementById('cart_totalPrice');
+	tp.innerHTML=atp.innerHTML=num.value*p1;
+}
+function dosubmit(){
+	var form = document.getElementById('form');
+	form.submit();
+}
+
+</script>
+</body>
+</html>

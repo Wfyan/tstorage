@@ -1,0 +1,67 @@
+#footer{
+	width: 990px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.footer_p1{
+	width: 990px;
+	margin:10px 0;
+	border-top: 1px solid #DDD;
+	padding: 20px 0;
+	border-bottom: 1px solid #f1f1f1;
+	overflow: hidden;
+}
+.guide{
+	float: left;
+	overflow: hidden;
+}
+#footer .logo{
+	float: right;
+	margin: 0;
+}
+.guide li{
+	float: left;
+	margin-left: 6px;
+}
+.guide .icon{
+	float: left;
+	width: 32px;
+	height: 28px;
+	margin-right: 14px;
+}
+.guide .bg{
+	float: left;
+	width: 90px;
+}
+.bg .title{
+	font-weight: bold;
+	height: 28px;
+	color: #666;
+	font-size: 14px;
+}
+.bg a{
+	display: inline-block;
+	color: #666;
+}
+.footer_custom{
+	text-align: center;
+	color: #666;
+	line-height: 25px;
+	margin-top: 10px;
+	position: relative;
+}
+.footer_custom p{
+	color: #555;
+	font-family: SimSun;
+}
+.govIcon_box{
+	width: 80px; 
+	height: 94px;
+	margin: 0 auto;
+}
+.icon2_box{
+	width: 50px;
+	height: 12px;
+	margin: 0 auto;
+}

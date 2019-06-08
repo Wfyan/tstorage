@@ -1,0 +1,25 @@
+.error-main{
+	margin: 0 auto;
+    width: 420px;
+}
+.label{
+	float: left;
+    width: 160px;
+    height: 151px;
+    background: url(../client/images/error/error.png) 0 0 no-repeat;
+}
+.info{
+	margin-left: 182px;
+    line-height: 1.8;
+}
+.title{
+	color: #666;
+    font-size: 14px;
+}
+.reason{
+	margin: 8px 0 18px 0;
+    color: #666;
+}
+.oper{
+	
+}
